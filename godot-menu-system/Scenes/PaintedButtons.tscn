@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dmxs3gr00c5df"]
+
+[ext_resource type="Texture2D" uid="uid://dqf32gihjj5ki" path="res://PNG/Background.png" id="1_hjfcu"]
+[ext_resource type="Texture2D" uid="uid://b277d4v0ugjit" path="res://PNG/Note.png" id="2_d1obj"]
+[ext_resource type="Texture2D" uid="uid://co428icc8oqmh" path="res://PNG/NotePressed.png" id="3_lhsxt"]
+[ext_resource type="FontFile" uid="uid://dng7xrh088hls" path="res://Fonts/bubble-sans Font/Bubble Sans 1.01.otf" id="4_d1obj"]
+
+[node name="PaintedButtons" type="Control" unique_id=1518375662]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1538177112]
+layout_mode = 0
+offset_right = 642.0
+offset_bottom = 480.0
+texture = ExtResource("1_hjfcu")
+
+[node name="TopButton" type="TextureButton" parent="." unique_id=1154128125]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 95.0
+offset_right = 213.0
+offset_bottom = 197.0
+texture_normal = ExtResource("2_d1obj")
+texture_pressed = ExtResource("3_lhsxt")
+
+[node name="Label" type="Label" parent="TopButton" unique_id=569288818]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 26.0
+offset_right = 91.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_d1obj")
+theme_override_font_sizes/font_size = 25
+text = "Start"
+
+[node name="LowerButton" type="TextureButton" parent="." unique_id=397111453]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 146.0
+offset_right = 387.0
+offset_bottom = 247.0
+texture_normal = ExtResource("2_d1obj")
+texture_pressed = ExtResource("3_lhsxt")
+
+[node name="Label" type="Label" parent="LowerButton" unique_id=2041072555]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 27.0
+offset_right = 84.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_d1obj")
+theme_override_font_sizes/font_size = 25
+text = "Exit"
